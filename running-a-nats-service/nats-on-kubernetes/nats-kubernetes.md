@@ -26,10 +26,10 @@ helm install nats nats/nats
 
 ## Validate connectivity
 
-Once the pods are up, validate by accessing the `nats-box` container and running a CLI command.
+Once the pods are up, validate by accessing the `my-nats-box` container and running a CLI command.
 
 ```sh
-kubectl exec -it deployment/nats-box -- nats pub test hi
+kubectl exec -it deployment/my-nats-box -- nats pub test hi
 ```
 
 The output should indicate a successful publish to NATS.
